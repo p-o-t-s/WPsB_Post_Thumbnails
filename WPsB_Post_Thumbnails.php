@@ -36,9 +36,9 @@ class WPsB_Post_Thumbnails
 		$this->add_image_size($this->config['add_image_size']);
 	}
 
-	public function add_theme_support()
+	public function add_theme_support(array $post_types = array())
 	{
-		add_theme_support('post-thumbnails');
+		add_theme_support('post-thumbnails', $post_types);
 	}
 
 	/**
